@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tantakala — Traditional Clothing · Nayagarh, Odisha</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:       #fdf8f2;
+  --surface:  #fff9f2;
+  --card:     #ffffff;
+  --border:   #e8ddd0;
+  --border2:  #d4c4b0;
+  --accent:   #b5451b;
+  --accent2:  #e05c2a;
+  --gold:     #c9860a;
+  --gold2:    #f0a930;
+  --green:    #2d7a4f;
+  --text:     #1a120a;
+  --text2:    #4a3728;
+  --muted:    #9a8070;
+  --shadow:   rgba(90,50,20,0.10);
+  --shadow2:  rgba(90,50,20,0.18);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow-x:hidden;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px;}
+
+/* ── ANNOUNCEMENT BAR ── */
+.ann-bar{
+  background:linear-gradient(90deg,var(--accent),#8b2a0a,var(--accent));
+  background-size:200% 100%;
+  animation:barSlide 4s linear infinite;
+  color:#fff;text-align:center;
+  padding:9px 16px;font-size:13px;font-weight:700;letter-spacing:.5px;
+}
+@keyframes barSlide{0%{background-position:0% 0%}100%{background-position:200% 0%}}
+
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:200;
+  background:var(--accent);
+  box-shadow:0 3px 20px var(--shadow2);
+}
+.header-top{
+  max-width:1400px;margin:0 auto;
+  display:flex;align-items:center;gap:20px;
+  padding:13px 24px;
+}
+.logo{
+  font-family:'Libre Baskerville',serif;
+  font-size:28px;font-weight:700;color:#fff;
+  text-decoration:none;white-space:nowrap;line-height:1;
+  letter-spacing:-0.5px;
+}
+.logo em{
+  display:block;font-style:normal;
+  font-family:'Nunito',sans-serif;font-size:10px;font-weight:400;
+  letter-spacing:1.5px;text-transform:uppercase;opacity:.85;margin-top:2px;
+}
+.search-wrap{
+  flex:1;max-width:580px;
+  display:flex;align-items:stretch;
+  background:#fff;border-radius:6px;overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,.12);
+}
+.search-select{
+  padding:0 12px;background:#f0e8df;border:none;
+  border-right:1px solid var(--border2);
+  font-family:'Nunito',sans-serif;font-size:13px;
+  color:var(--text2);cursor:pointer;outline:none;
+}
+.search-wrap input{
+  flex:1;padding:11px 14px;border:none;outline:none;
+  font-family:'Nunito',sans-serif;font-size:14px;color:var(--text);
+  background:#fff;
+}
+.search-wrap input::placeholder{color:var(--muted);}
+.search-btn{
+  padding:0 20px;background:var(--gold);border:none;
+  cursor:pointer;font-size:18px;color:#fff;
+  transition:background .2s;
+}
+.search-btn:hover{background:var(--gold2);}
+.header-actions{display:flex;gap:6px;margin-left:auto;}
+.hbtn{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:7px 14px;background:none;border:none;
+  color:#fff;cursor:pointer;font-family:'Nunito',sans-serif;
+  font-size:11px;font-weight:600;border-radius:6px;
+  transition:background .2s;text-decoration:none;position:relative;
+  white-space:nowrap;
+}
+.hbtn:hover{background:rgba(255,255,255,.18);}
+.hbtn .hicon{font-size:20px;}
+.hbadge{
+  position:absolute;top:3px;right:3px;
+  background:var(--gold2);color:#fff;
+  width:17px;height:17px;border-radius:50%;
+  font-size:10px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── NAV ── */
+.main-nav{
+  background:#6b1a02;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.nav-inner{
+  max-width:1400px;margin:0 auto;
+  display:flex;gap:0;padding:0 24px;
+  overflow-x:auto;
+}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-link{
+  padding:11px 16px;color:rgba(255,255,255,.85);
+  text-decoration:none;font-size:13.5px;font-weight:600;
+  white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;
+  transition:all .2s;
+}
+.nav-link:hover,.nav-link.active{color:#fff;border-bottom-color:var(--gold2);}
+
+/* ── HERO SLIDER ── */
+.hero{position:relative;overflow:hidden;background:#1a0a02;}
+.hero-slides{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1);}
+.hero-slide{
+  min-width:100%;height:480px;
+  display:flex;align-items:center;position:relative;overflow:hidden;
+}
+.slide-1{background:linear-gradient(120deg,#2d0d02 0%,#6b2006 40%,#1a0d04 100%);}
+.slide-2{background:linear-gradient(120deg,#0a2d12 0%,#1a5c28 40%,#0a1a0a 100%);}
+.slide-3{background:linear-gradient(120deg,#0d1a2d 0%,#1a3560 40%,#0a0d1a 100%);}
+.slide-decor{
+  position:absolute;right:0;top:0;bottom:0;width:55%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:220px;opacity:.12;
+  animation:float 6s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.slide-content{
+  position:relative;z-index:1;
+  max-width:1400px;width:100%;margin:0 auto;padding:0 60px;
+}
+.slide-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  color:var(--gold2);padding:5px 14px;border-radius:999px;
+  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.slide-content h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(32px,4vw,54px);color:#fff;
+  line-height:1.15;margin-bottom:14px;font-weight:700;
+}
+.slide-content h2 span{color:var(--gold2);font-style:italic;}
+.slide-content p{
+  color:rgba(255,255,255,.7);font-size:16px;
+  line-height:1.7;max-width:460px;margin-bottom:28px;
+}
+.slide-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-hero{
+  padding:13px 30px;border-radius:6px;
+  font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;
+  cursor:pointer;transition:all .22s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;border:none;
+}
+.btn-hero.primary{background:var(--gold2);color:#1a0800;}
+.btn-hero.primary:hover{background:#f5b840;transform:translateY(-2px);box-shadow:0 8px 24px rgba(240,169,48,.35);}
+.btn-hero.secondary{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.3);}
+.btn-hero.secondary:hover{background:rgba(255,255,255,.22);}
+.hero-dots{
+  position:absolute;bottom:20px;left:50%;transform:translateX(-50%);
+  display:flex;gap:8px;z-index:10;
+}
+.hero-dot{
+  width:8px;height:8px;border-radius:4px;
+  background:rgba(255,255,255,.4);border:none;cursor:pointer;
+  transition:all .3s;
+}
+.hero-dot.active{width:24px;background:var(--gold2);}
+.hero-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.2);
+  color:#fff;font-size:18px;cursor:pointer;z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;
+}
+.hero-arrow:hover{background:rgba(0,0,0,.65);}
+.hero-arrow.left{left:20px;}
+.hero-arrow.right{right:20px;}
+
+/* ── TRUST STRIP ── */
+.trust-strip{background:var(--card);border-bottom:1px solid var(--border);}
+.trust-inner{
+  max-width:1400px;margin:0 auto;
+  display:flex;divide:0;overflow-x:auto;
+}
+.trust-inner::-webkit-scrollbar{display:none;}
+.trust-item{
+  flex:1;min-width:180px;
+  display:flex;align-items:center;gap:10px;
+  padding:14px 20px;border-right:1px solid var(--border);
+  white-space:nowrap;
+}
+.trust-item:last-child{border-right:none;}
+.trust-icon{font-size:24px;}
+.trust-title{font-size:13px;font-weight:700;color:var(--text);display:block;}
+.trust-sub{font-size:11px;color:var(--muted);}
+
+/* ── SECTION ── */
+.section{max-width:1400px;margin:0 auto;padding:52px 24px;}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;}
+.sec-title{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--text);
+}
+.sec-title span{color:var(--accent);font-style:italic;}
+.sec-sub{color:var(--muted);font-size:13.5px;margin-top:5px;}
+.view-all-link{
+  color:var(--accent);font-size:13.5px;font-weight:700;
+  text-decoration:none;display:flex;align-items:center;gap:4px;
+  padding:8px 16px;border:1.5px solid var(--accent);border-radius:6px;
+  transition:all .2s;white-space:nowrap;
+}
+.view-all-link:hover{background:var(--accent);color:#fff;}
+
+/* ── CATEGORIES ── */
+.cat-scroll{
+  display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;
+}
+.cat-scroll::-webkit-scrollbar{height:4px;}
+.cat-scroll::-webkit-scrollbar-thumb{background:var(--accent);}
+.cat-card{
+  flex:0 0 auto;width:130px;
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:14px;padding:20px 12px;text-align:center;
+  cursor:pointer;transition:all .22s;
+}
+.cat-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 8px 24px var(--shadow2);}
+.cat-card.active{border-color:var(--accent);background:#fff5f2;}
+.cat-icon{font-size:36px;margin-bottom:10px;display:block;}
+.cat-name{font-size:12.5px;font-weight:700;color:var(--text2);}
+.cat-count{font-size:11px;color:var(--muted);margin-top:3px;}
+
+/* ── PRODUCT GRID ── */
+.prod-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:18px;
+}
+.prod-card{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:12px;overflow:hidden;cursor:pointer;
+  transition:all .25s;position:relative;
+}
+.prod-card:hover{
+  border-color:var(--accent);
+  transform:translateY(-5px);
+  box-shadow:0 16px 40px var(--shadow2);
+}
+.prod-img-wrap{
+  aspect-ratio:3/4;
+  background:linear-gradient(135deg,#fdf0e8,#f5e0cc);
+  display:flex;align-items:center;justify-content:center;
+  font-size:80px;position:relative;overflow:hidden;
+}
+.prod-img-wrap::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 30% 30%,rgba(255,255,255,.5),transparent 60%),
+    radial-gradient(circle at 70% 80%,rgba(181,69,27,.08),transparent 50%);
+}
+.prod-badges{position:absolute;top:10px;left:10px;display:flex;flex-direction:column;gap:5px;z-index:1;}
+.pbadge{padding:3px 9px;border-radius:5px;font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;}
+.pbadge-new{background:#1e6f3c;color:#fff;}
+.pbadge-sale{background:var(--accent);color:#fff;}
+.pbadge-hot{background:var(--gold);color:#fff;}
+.pbadge-trend{background:#5b21b6;color:#fff;}
+.pbadge-ltd{background:#0e7490;color:#fff;}
+.wish-btn{
+  position:absolute;top:10px;right:10px;z-index:1;
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.85);backdrop-filter:blur(4px);
+  border:none;cursor:pointer;font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;color:var(--muted);
+}
+.wish-btn:hover,.wish-btn.active{background:var(--accent);color:#fff;}
+.quick-view{
+  position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+  background:rgba(26,18,10,.8);color:#fff;
+  padding:6px 16px;border-radius:999px;
+  font-size:12px;font-weight:600;
+  opacity:0;transition:opacity .2s;white-space:nowrap;
+  border:none;cursor:pointer;
+}
+.prod-card:hover .quick-view{opacity:1;}
+.prod-info{padding:14px;}
+.prod-brand{font-size:10.5px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.6px;}
+.prod-name{font-size:14px;font-weight:600;color:var(--text);margin:5px 0 8px;line-height:1.4;}
+.prod-rating{display:flex;align-items:center;gap:6px;margin-bottom:10px;}
+.rating-pill{
+  display:inline-flex;align-items:center;gap:3px;
+  background:var(--green);color:#fff;
+  padding:2px 8px;border-radius:4px;
+  font-size:12px;font-weight:700;
+}
+.rating-count{font-size:12px;color:var(--muted);}
+.prod-price{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
+.price-curr{font-size:19px;font-weight:800;color:var(--text);}
+.price-orig{font-size:13px;color:var(--muted);text-decoration:line-through;}
+.price-off{font-size:12.5px;color:var(--green);font-weight:700;}
+.sizes{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px;}
+.size-chip{
+  padding:3px 9px;border-radius:4px;
+  border:1px solid var(--border2);font-size:11px;font-weight:600;
+  color:var(--text2);cursor:pointer;transition:all .15s;
+}
+.size-chip:hover,.size-chip.active{border-color:var(--accent);background:#fff5f2;color:var(--accent);}
+.add-btn{
+  width:100%;padding:10px;border-radius:7px;
+  background:var(--accent);color:#fff;border:none;
+  font-family:'Nunito',sans-serif;font-size:13.5px;font-weight:700;
+  cursor:pointer;transition:all .22s;letter-spacing:.3px;
+}
+.add-btn:hover{background:var(--accent2);transform:translateY(-1px);}
+
+/* ── OFFERS BANNER ── */
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.offer-card{
+  border-radius:14px;padding:28px 24px;cursor:pointer;
+  border:1.5px solid transparent;
+  position:relative;overflow:hidden;
+  transition:transform .22s,box-shadow .22s;
+}
+.offer-card:hover{transform:scale(1.015);box-shadow:0 12px 36px var(--shadow2);}
+.offer-card.red{background:linear-gradient(135deg,#fff8f6,#fde8df);border-color:#f0c4b4;}
+.offer-card.green{background:linear-gradient(135deg,#f4fbf6,#d9f0e2);border-color:#b4d8c0;}
+.offer-card.gold{background:linear-gradient(135deg,#fffbf0,#fdeece);border-color:#f0d88a;}
+.offer-emoji{font-size:52px;margin-bottom:14px;display:block;}
+.offer-tag{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px;}
+.offer-tag.red{color:var(--accent);}
+.offer-tag.green{color:var(--green);}
+.offer-tag.gold{color:var(--gold);}
+.offer-title{font-family:'Libre Baskerville',serif;font-size:22px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.offer-desc{font-size:13px;color:var(--muted);line-height:1.6;}
+.offer-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:16px;font-size:13px;font-weight:700;
+  padding:8px 16px;border-radius:6px;border:none;cursor:pointer;
+  font-family:'Nunito',sans-serif;transition:all .2s;text-decoration:none;
+}
+.offer-btn.red{background:var(--accent);color:#fff;}
+.offer-btn.red:hover{background:var(--accent2);}
+.offer-btn.green{background:var(--green);color:#fff;}
+.offer-btn.green:hover{background:#2a6b44;}
+.offer-btn.gold{background:var(--gold);color:#fff;}
+.offer-btn.gold:hover{background:var(--gold2);}
+
+/* ── COMBO SECTION ── */
+.combo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.combo-card{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:14px;padding:24px;display:flex;gap:20px;align-items:center;
+  cursor:pointer;transition:all .22s;
+}
+.combo-card:hover{border-color:var(--accent);box-shadow:0 8px 28px var(--shadow);}
+.combo-emojis{font-size:52px;display:flex;gap:-4px;}
+.combo-text{}
+.combo-label{font-size:11px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.8px;}
+.combo-name{font-family:'Libre Baskerville',serif;font-size:18px;font-weight:700;color:var(--text);margin:5px 0 4px;}
+.combo-desc{font-size:12.5px;color:var(--muted);}
+.combo-price{margin-top:10px;display:flex;align-items:center;gap:8px;}
+.combo-curr{font-size:20px;font-weight:800;color:var(--text);}
+.combo-orig{font-size:13px;color:var(--muted);text-decoration:line-through;}
+.combo-off{font-size:12px;color:var(--green);font-weight:700;}
+
+/* ── TESTIMONIALS ── */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.testi-card{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:14px;padding:24px;position:relative;
+}
+.testi-card::before{
+  content:'"';position:absolute;top:12px;right:20px;
+  font-family:'Libre Baskerville',serif;
+  font-size:72px;color:var(--border2);line-height:1;
+}
+.t-stars{color:var(--gold);font-size:15px;margin-bottom:12px;}
+.t-text{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:16px;font-style:italic;}
+.t-author{display:flex;align-items:center;gap:12px;}
+.t-avatar{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),#8b2a0a);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.t-name{font-size:14px;font-weight:700;color:var(--text);}
+.t-loc{font-size:12px;color:var(--muted);margin-top:2px;}
+.t-verified{font-size:11px;color:var(--green);font-weight:600;margin-top:3px;}
+
+/* ── FEATURES ── */
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.feature-card{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:12px;padding:24px 18px;text-align:center;
+  transition:border-color .2s,transform .2s;
+}
+.feature-card:hover{border-color:var(--accent);transform:translateY(-3px);}
+.f-icon{font-size:36px;margin-bottom:12px;}
+.f-title{font-size:14.5px;font-weight:700;color:var(--text);margin-bottom:5px;}
+.f-desc{font-size:12.5px;color:var(--muted);line-height:1.55;}
+
+/* ── BRAND STORY ── */
+.story-section{
+  background:linear-gradient(135deg,#2d0d02,#5c1a06);
+  padding:72px 24px;position:relative;overflow:hidden;
+}
+.story-decor{
+  position:absolute;right:-40px;top:50%;transform:translateY(-50%);
+  font-size:300px;opacity:.05;
+}
+.story-inner{
+  max-width:680px;margin:0 auto;text-align:center;position:relative;z-index:1;
+}
+.story-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(240,169,48,.12);border:1px solid rgba(240,169,48,.3);
+  color:var(--gold2);padding:6px 16px;border-radius:999px;
+  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:22px;
+}
+.story-inner h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(28px,4vw,44px);color:#fff;
+  font-weight:700;line-height:1.2;margin-bottom:18px;
+}
+.story-inner h2 span{color:var(--gold2);font-style:italic;}
+.story-inner p{color:rgba(255,255,255,.7);font-size:16px;line-height:1.8;margin-bottom:28px;}
+.story-stats{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;}
+.story-stat{text-align:center;}
+.story-stat .num{font-family:'Libre Baskerville',serif;font-size:36px;font-weight:700;color:var(--gold2);}
+.story-stat .lbl{font-size:13px;color:rgba(255,255,255,.6);margin-top:4px;}
+
+/* ── NEWSLETTER ── */
+.newsletter{
+  background:var(--card);border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:44px 24px;
+}
+.nl-inner{
+  max-width:600px;margin:0 auto;text-align:center;
+}
+.nl-inner h3{
+  font-family:'Libre Baskerville',serif;
+  font-size:26px;font-weight:700;margin-bottom:10px;
+}
+.nl-inner p{color:var(--muted);font-size:14px;margin-bottom:22px;}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto;}
+.nl-form input{
+  flex:1;padding:12px 16px;
+  border:1.5px solid var(--border2);border-radius:7px;
+  font-family:'Nunito',sans-serif;font-size:14px;
+  background:var(--bg);color:var(--text);outline:none;
+  transition:border-color .2s;
+}
+.nl-form input:focus{border-color:var(--accent);}
+.nl-form button{
+  padding:12px 22px;background:var(--accent);color:#fff;
+  border:none;border-radius:7px;font-family:'Nunito',sans-serif;
+  font-size:14px;font-weight:700;cursor:pointer;transition:background .2s;
+  white-space:nowrap;
+}
+.nl-form button:hover{background:var(--accent2);}
+
+/* ── FOOTER ── */
+footer{background:#1a0a02;color:rgba(255,255,255,.85);}
+.footer-top{
+  max-width:1400px;margin:0 auto;
+  display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;
+  padding:56px 24px 40px;
+}
+.footer-logo{
+  font-family:'Libre Baskerville',serif;
+  font-size:26px;font-weight:700;color:#fff;
+  display:block;margin-bottom:14px;
+}
+.footer-about{color:rgba(255,255,255,.55);font-size:14px;line-height:1.75;margin-bottom:20px;}
+.addr-box{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;padding:18px;font-size:13px;
+  color:rgba(255,255,255,.6);line-height:1.9;
+}
+.addr-box strong{color:#fff;display:block;font-size:14px;margin-bottom:6px;}
+.addr-pin{color:var(--gold2);font-weight:700;}
+.addr-phone{color:var(--gold2);font-weight:600;margin-top:6px;display:block;font-size:13.5px;}
+.footer-col h4{
+  font-size:13.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;
+  color:#fff;margin-bottom:18px;padding-bottom:8px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:11px;}
+.footer-col ul li a{
+  color:rgba(255,255,255,.55);text-decoration:none;font-size:13.5px;
+  transition:color .2s;display:flex;align-items:center;gap:6px;
+}
+.footer-col ul li a:hover{color:var(--gold2);}
+.footer-bottom{
+  max-width:1400px;margin:0 auto;
+  padding:18px 24px;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{font-size:13px;color:rgba(255,255,255,.4);}
+.social-row{display:flex;gap:10px;}
+.soc-btn{
+  width:38px;height:38px;border-radius:9px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+  font-size:17px;cursor:pointer;transition:all .2s;text-decoration:none;
+}
+.soc-btn:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px);}
+.payment-badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.pay-badge{
+  padding:5px 10px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);border-radius:5px;
+  font-size:11px;font-weight:700;color:rgba(255,255,255,.6);
+}
+
+/* ── TOAST ── */
+.toast{
+  position:fixed;bottom:24px;right:24px;z-index:9999;
+  background:var(--text);color:#fff;
+  border-radius:10px;padding:14px 20px;
+  font-size:14px;font-weight:600;
+  box-shadow:0 8px 32px rgba(0,0,0,.25);
+  display:flex;align-items:center;gap:10px;
+  transform:translateY(80px);opacity:0;
+  transition:all .35s cubic-bezier(.4,0,.2,1);
+  max-width:320px;
+}
+.toast.show{transform:translateY(0);opacity:1;}
+
+/* ── FILTER BAR ── */
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.fchip{
+  padding:7px 16px;border-radius:999px;
+  border:1.5px solid var(--border2);background:var(--card);
+  color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;
+  transition:all .2s;
+}
+.fchip:hover,.fchip.active{background:#fff5f2;border-color:var(--accent);color:var(--accent);}
+
+/* ── DIVIDER ── */
+.sec-divider{height:1px;background:var(--border);margin:0 24px;}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp .55s ease both;}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .offers-grid{grid-template-columns:1fr 1fr;}
+  .combo-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr 1fr;}
+  .features-grid{grid-template-columns:1fr 1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .hero-slide{height:360px;}
+  .slide-content{padding:0 24px;}
+  .offers-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .header-top{flex-wrap:wrap;}
+  .search-wrap{order:3;min-width:100%;}
+  .footer-top{grid-template-columns:1fr;}
+  .story-stats{gap:24px;}
+  .nl-form{flex-direction:column;}
+}
+@media(max-width:500px){
+  .features-grid{grid-template-columns:1fr 1fr;}
+  .hbtn .hlabel{display:none;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann-bar">🎉 GRAND OPENING SALE — 40% OFF Sitewide | Use Code: <strong>TANTAKALA40</strong> | Free Shipping above ₹499 | Cash on Delivery Available</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <a class="logo" href="#">
+      Tantakala
+      <em>Traditional Clothing · Nayagarh, Odisha</em>
+    </a>
+    <div class="search-wrap">
+      <select class="search-select" id="searchCat">
+        <option>All</option>
+        <option>Shirts</option>
+        <option>Pants</option>
+        <option>Ethnic</option>
+        <option>Combo Sets</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search for shirts, pants, kurtas, ethnic wear…"/>
+      <button class="search-btn" onclick="handleSearch()">🔍</button>
+    </div>
+    <div class="header-actions">
+      <a class="hbtn" href="#" onclick="toast('👤 Login / Sign Up to your account')">
+        <span class="hicon">👤</span>
+        <span class="hlabel">Account</span>
+      </a>
+      <a class="hbtn" href="#" onclick="toast('❤️ 3 items in your Wishlist')">
+        <span class="hicon">❤️</span>
+        <span class="hlabel">Wishlist</span>
+        <span class="hbadge">3</span>
+      </a>
+      <a class="hbtn" href="#" onclick="toast('🛒 2 items in your Cart — ₹1,598')">
+        <span class="hicon">🛒</span>
+        <span class="hlabel">Cart</span>
+        <span class="hbadge" id="cartCount">2</span>
+      </a>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <span class="nav-link active" onclick="nav(this,'all')">🏠 Home</span>
+      <span class="nav-link" onclick="nav(this,'shirt')">👔 Shirts</span>
+      <span class="nav-link" onclick="nav(this,'pant')">👖 Pants</span>
+      <span class="nav-link" onclick="nav(this,'modern')">✨ Modern Wear</span>
+      <span class="nav-link" onclick="nav(this,'ethnic')">🧥 Ethnic</span>
+      <span class="nav-link" onclick="nav(this,'formal')">💼 Formal</span>
+      <span class="nav-link" onclick="nav(this,'casual')">😎 Casual</span>
+      <span class="nav-link" onclick="toast('🎁 Best deals loaded!')">Offers 🔥</span>
+      <span class="nav-link" onclick="toast('📦 Enter your Order ID to track')">Track Order</span>
+      <span class="nav-link" onclick="toast('🤝 Become a Tantakala Seller')">Sell with Us</span>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO SLIDER -->
+<section class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <!-- Slide 1 -->
+    <div class="hero-slide slide-1">
+      <div class="slide-decor">👔</div>
+      <div class="slide-content fade-up">
+        <div class="slide-eyebrow">✦ New Collection 2026 ✦</div>
+        <h2>Tradition Woven<br>into Every <span>Thread</span></h2>
+        <p>Discover handpicked traditional shirts and pants from the heart of Odisha. Premium fabrics, timeless designs — crafted for the modern Odia man.</p>
+        <div class="slide-btns">
+          <a class="btn-hero primary" href="#products">Shop Collection →</a>
+          <a class="btn-hero secondary" href="#offers">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="hero-slide slide-2">
+      <div class="slide-decor">🧥</div>
+      <div class="slide-content">
+        <div class="slide-eyebrow">🌿 Ethnic Special</div>
+        <h2>Celebrate Odisha's<br><span>Cultural Heritage</span></h2>
+        <p>Festival-ready kurtas, dhotis and ethnic shirts — rooted in Odia tradition, designed for today's celebrations. Now at unbeatable prices.</p>
+        <div class="slide-btns">
+          <a class="btn-hero primary" href="#products">Shop Ethnic →</a>
+          <a class="btn-hero secondary" href="#">Explore Festive</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="hero-slide slide-3">
+      <div class="slide-decor">👖</div>
+      <div class="slide-content">
+        <div class="slide-eyebrow">⚡ Flash Deal Today</div>
+        <h2>Modern Pants<br><span>Flat 40% OFF</span></h2>
+        <p>Slim-fit, straight-cut and cargo pants in premium fabrics. Style meets comfort. Shop the Tantakala modern pant collection today.</p>
+        <div class="slide-btns">
+          <a class="btn-hero primary" href="#products">Grab the Deal →</a>
+          <a class="btn-hero secondary" href="#">All Pants</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="hero-arrow left" onclick="moveSlide(-1)">‹</button>
+  <button class="hero-arrow right" onclick="moveSlide(1)">›</button>
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="goSlide(0)"></button>
+    <button class="hero-dot" onclick="goSlide(1)"></button>
+    <button class="hero-dot" onclick="goSlide(2)"></button>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <span class="trust-icon">🚚</span>
+      <span><span class="trust-title">Free Delivery</span><span class="trust-sub">On orders above ₹499</span></span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">💵</span>
+      <span><span class="trust-title">Cash on Delivery</span><span class="trust-sub">Available everywhere</span></span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🔄</span>
+      <span><span class="trust-title">Easy Returns</span><span class="trust-sub">7-day return policy</span></span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🛡️</span>
+      <span><span class="trust-title">Authentic Products</span><span class="trust-sub">100% genuine quality</span></span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">⭐</span>
+      <span><span class="trust-title">4.8★ Rated Store</span><span class="trust-sub">1200+ happy customers</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="section">
+  <div class="sec-head">
+    <div>
+      <div class="sec-title">Shop by <span>Category</span></div>
+      <div class="sec-sub">Browse our curated traditional clothing categories</div>
+    </div>
+  </div>
+  <div class="cat-scroll" id="catScroll">
+    <div class="cat-card active" onclick="filterCat(this,'all')">
+      <span class="cat-icon">🏠</span>
+      <div class="cat-name">All Items</div>
+      <div class="cat-count">120+ products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'shirt')">
+      <span class="cat-icon">👔</span>
+      <div class="cat-name">Formal Shirts</div>
+      <div class="cat-count">28 products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'casual')">
+      <span class="cat-icon">👕</span>
+      <div class="cat-name">Casual Shirts</div>
+      <div class="cat-count">22 products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'pant')">
+      <span class="cat-icon">👖</span>
+      <div class="cat-name">Classic Pants</div>
+      <div class="cat-count">18 products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'modern')">
+      <span class="cat-icon">✨</span>
+      <div class="cat-name">Modern Pants</div>
+      <div class="cat-count">14 products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'ethnic')">
+      <span class="cat-icon">🧥</span>
+      <div class="cat-name">Ethnic Kurta</div>
+      <div class="cat-count">24 products</div>
+    </div>
+    <div class="cat-card" onclick="filterCat(this,'formal')">
+      <span class="cat-icon">💼</span>
+      <div class="cat-name">Formal Wear</div>
+      <div class="cat-count">16 products</div>
+    </div>
+    <div class="cat-card" onclick="toast('🎩 Accessories coming soon!')">
+      <span class="cat-icon">🎩</span>
+      <div class="cat-name">Accessories</div>
+      <div class="cat-count">Coming soon</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<!-- OFFERS -->
+<div class="section" id="offers">
+  <div class="sec-head">
+    <div>
+      <div class="sec-title">Best <span>Offers</span> Today</div>
+      <div class="sec-sub">Handpicked deals — only for Tantakala customers</div>
+    </div>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card red" onclick="toast('🎉 Code TANTAKALA40 applied! 40% OFF on all shirts')">
+      <span class="offer-emoji">👔</span>
+      <div class="offer-tag red">⚡ Flash Sale</div>
+      <div class="offer-title">Flat 40% OFF<br>on All Shirts</div>
+      <div class="offer-desc">Premium cotton, linen & traditional handloom shirts. Limited stock. Code: <strong>TANTAKALA40</strong></div>
+      <button class="offer-btn red" onclick="filterCat(document.querySelector('.cat-card'),'shirt')">Shop Shirts →</button>
+    </div>
+    <div class="offer-card green" onclick="toast('🛍️ Buy 2 Pants, Get 1 FREE offer activated!')">
+      <span class="offer-emoji">👖</span>
+      <div class="offer-tag green">🎁 Combo Deal</div>
+      <div class="offer-title">Buy 2 Pants<br>Get 1 FREE!</div>
+      <div class="offer-desc">Mix and match classic pants, modern slim-fits, and cargo trousers. All sizes available.</div>
+      <button class="offer-btn green">Grab Deal →</button>
+    </div>
+    <div class="offer-card gold" onclick="toast('🧥 Festival 30% OFF — Code ODIA30 applied!')">
+      <span class="offer-emoji">🧥</span>
+      <div class="offer-tag gold">🌿 Festival Special</div>
+      <div class="offer-title">Ethnic Wear<br>30% Discount</div>
+      <div class="offer-desc">Celebrate Odia tradition with handcrafted kurtas and ethnic shirts. Code: <strong>ODIA30</strong></div>
+      <button class="offer-btn gold">Shop Ethnic →</button>
+    </div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<!-- PRODUCTS -->
+<div class="section" id="products">
+  <div class="sec-head">
+    <div>
+      <div class="sec-title">Our <span>Products</span></div>
+      <div class="sec-sub">Authentic traditional wear from Sarankul, Nayagarh</div>
+    </div>
+    <a class="view-all-link" href="#">View All →</a>
+  </div>
+  <div class="filter-row" id="filterRow">
+    <div class="fchip active" onclick="applyFilter(this,'all')">All Products</div>
+    <div class="fchip" onclick="applyFilter(this,'shirt')">Shirts</div>
+    <div class="fchip" onclick="applyFilter(this,'pant')">Pants</div>
+    <div class="fchip" onclick="applyFilter(this,'modern')">Modern</div>
+    <div class="fchip" onclick="applyFilter(this,'ethnic')">Ethnic</div>
+    <div class="fchip" onclick="applyFilter(this,'formal')">Formal</div>
+    <div class="fchip" onclick="applyFilter(this,'casual')">Casual</div>
+    <div class="fchip" onclick="applyFilter(this,'sale')">🔥 On Sale</div>
+  </div>
+  <div class="prod-grid" id="prodGrid"></div>
+</div>
+
+<div class="sec-divider"></div>
+
+<!-- COMBO SETS -->
+<div class="section">
+  <div class="sec-head">
+    <div>
+      <div class="sec-title">Combo <span>Sets</span></div>
+      <div class="sec-sub">Shirt + Pant bundled for maximum savings</div>
+    </div>
+    <a class="view-all-link" href="#">All Combos →</a>
+  </div>
+  <div class="combo-grid">
+    <div class="combo-card" onclick="addToCart('Traditional Combo Set')">
+      <div class="combo-emojis">👔👖</div>
+      <div class="combo-text">
+        <div class="combo-label">🔥 Best Seller Combo</div>
+        <div class="combo-name">Traditional Shirt + Pant Set</div>
+        <div class="combo-desc">Classic handloom shirt paired with formal trouser — perfect for puja, ceremonies and daily wear.</div>
+        <div class="combo-price">
+          <span class="combo-curr">₹999</span>
+          <span class="combo-orig">₹1,699</span>
+          <span class="combo-off">41% OFF</span>
+        </div>
+      </div>
+    </div>
+    <div class="combo-card" onclick="addToCart('Modern Festive Combo')">
+      <div class="combo-emojis">✨👖</div>
+      <div class="combo-text">
+        <div class="combo-label">🌿 Festive Edition</div>
+        <div class="combo-name">Modern Shirt + Slim Pant</div>
+        <div class="combo-desc">Contemporary styling meets Odia tradition. Slim-fit pant with printed ethnic shirt for festive occasions.</div>
+        <div class="combo-price">
+          <span class="combo-curr">₹1,199</span>
+          <span class="combo-orig">₹1,999</span>
+          <span class="combo-off">40% OFF</span>
+        </div>
+      </div>
+    </div>
+    <div class="combo-card" onclick="addToCart('Formal Office Combo')">
+      <div class="combo-emojis">💼👔</div>
+      <div class="combo-text">
+        <div class="combo-label">💼 Office Ready</div>
+        <div class="combo-name">Formal Shirt + Trouser Set</div>
+        <div class="combo-desc">Crisp cotton formal shirt with tailored trousers. Dress sharp for office and meetings every day.</div>
+        <div class="combo-price">
+          <span class="combo-curr">₹1,099</span>
+          <span class="combo-orig">₹1,799</span>
+          <span class="combo-off">39% OFF</span>
+        </div>
+      </div>
+    </div>
+    <div class="combo-card" onclick="addToCart('Ethnic Kurta Set')">
+      <div class="combo-emojis">🧥👖</div>
+      <div class="combo-text">
+        <div class="combo-label">🎊 Festival Pick</div>
+        <div class="combo-name">Ethnic Kurta + Pyjama Set</div>
+        <div class="combo-desc">Handcrafted Odia kurta with matching pyjama — ideal for Dussehra, Diwali and family gatherings.</div>
+        <div class="combo-price">
+          <span class="combo-curr">₹849</span>
+          <span class="combo-orig">₹1,499</span>
+          <span class="combo-off">43% OFF</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BRAND STORY -->
+<div class="story-section">
+  <div class="story-decor">🪡</div>
+  <div class="story-inner">
+    <div class="story-badge">✦ Our Story ✦</div>
+    <h2>Rooted in <span>Sarankul</span>,<br>Dressed for All of Odisha</h2>
+    <p>Tantakala was born from a simple belief — every man of Odisha deserves to wear tradition with pride. From the lanes of Sarankul, Nayagarh, we bring you clothing that carries the soul of our culture: handwoven fabrics, honest craftsmanship, and prices that respect every pocket.</p>
+    <div class="story-stats">
+      <div class="story-stat">
+        <div class="num">1200+</div>
+        <div class="lbl">Happy Customers</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">120+</div>
+        <div class="lbl">Products</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">4.8★</div>
+        <div class="lbl">Average Rating</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">5+</div>
+        <div class="lbl">Years of Trust</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section">
+  <div class="sec-head">
+    <div>
+      <div class="sec-title">Customer <span>Reviews</span></div>
+      <div class="sec-sub">What our Odisha customers say about Tantakala</div>
+    </div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="t-stars">★★★★★</div>
+      <div class="t-text">"Ekdum first class! The traditional shirt quality is amazing — better than anything I found in Bhubaneswar. Delivered in just 2 days to Nayagarh. Will buy again!"</div>
+      <div class="t-author">
+        <div class="t-avatar">😊</div>
+        <div>
+          <div class="t-name">Suresh Kumar Sahu</div>
+          <div class="t-loc">📍 Sarankul, Nayagarh</div>
+          <div class="t-verified">✅ Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="t-stars">★★★★★</div>
+      <div class="t-text">"I ordered the modern slim-fit pants for office and they fit perfectly. The fabric is premium quality. Tantakala is the best clothing shop in Nayagarh — no doubt!"</div>
+      <div class="t-author">
+        <div class="t-avatar">🧑</div>
+        <div>
+          <div class="t-name">Rajesh Kumar Panda</div>
+          <div class="t-loc">📍 Nayagarh Town</div>
+          <div class="t-verified">✅ Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="t-stars">★★★★★</div>
+      <div class="t-text">"Bought the ethnic kurta + pant combo for Dussehra. Everyone at the puja asked where I got it! Excellent quality at such affordable price. Highly recommend Tantakala!"</div>
+      <div class="t-author">
+        <div class="t-avatar">🙂</div>
+        <div>
+          <div class="t-name">Biswaranjan Mohanty</div>
+          <div class="t-loc">📍 Odagaon, Nayagarh</div>
+          <div class="t-verified">✅ Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="section" style="padding-top:0">
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="f-icon">🚚</div>
+      <div class="f-title">Fast Delivery</div>
+      <div class="f-desc">Express delivery across Odisha. Same-day dispatch from Sarankul warehouse.</div>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon">💵</div>
+      <div class="f-title">Cash on Delivery</div>
+      <div class="f-desc">Pay when your order arrives. No advance payment needed. Fully trustworthy.</div>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon">🔄</div>
+      <div class="f-title">Easy 7-Day Returns</div>
+      <div class="f-desc">Not satisfied? Return within 7 days for a full refund — no questions asked.</div>
+    </div>
+    <div class="feature-card">
+      <div class="f-icon">🛡️</div>
+      <div class="f-title">100% Genuine</div>
+      <div class="f-desc">Every product is authentic, quality-checked and sourced directly from weavers.</div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="nl-inner">
+    <h3>Get Exclusive Offers 🎁</h3>
+    <p>Subscribe to Tantakala's newsletter and receive special deals, new arrivals and festival offers first!</p>
+    <div class="nl-form">
+      <input type="email" placeholder="Enter your email address…" id="nlEmail"/>
+      <button onclick="subscribeNL()">Subscribe →</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo">Tantakala</span>
+      <p class="footer-about">Tantakala is Nayagarh's premier traditional clothing store, rooted in the rich textile culture of Odisha. From handloom shirts to modern fits — we bring authentic style to every doorstep.</p>
+      <div class="addr-box">
+        <strong>📍 Store Address</strong>
+        Tantakala Traditional Clothing<br>
+        Sarankul, Nayagarh District<br>
+        Odisha, India<br>
+        <span class="addr-pin">PIN: 752080</span>
+        <span class="addr-phone">📞 +91 98765 43210</span>
+        <span style="font-size:13px;color:rgba(255,255,255,.5);display:block;margin-top:4px;">✉️ tantakala@gmail.com</span>
+        <span style="font-size:13px;color:rgba(255,255,255,.5);display:block;">🕐 Mon–Sat: 9:00 AM – 8:00 PM</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">👔 All Shirts</a></li>
+        <li><a href="#">👖 All Pants</a></li>
+        <li><a href="#">🧥 Ethnic Wear</a></li>
+        <li><a href="#">✨ Modern Collection</a></li>
+        <li><a href="#">🎁 Combo Sets</a></li>
+        <li><a href="#">🔥 Sale Items</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Customer Help</h4>
+      <ul>
+        <li><a href="#">📦 Track My Order</a></li>
+        <li><a href="#">🔄 Returns & Refunds</a></li>
+        <li><a href="#">📏 Size Guide</a></li>
+        <li><a href="#">💳 Payment Options</a></li>
+        <li><a href="#">🚚 Delivery Info</a></li>
+        <li><a href="#">📞 Contact Us</a></li>
+        <li><a href="#">❓ FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">🏢 About Tantakala</a></li>
+        <li><a href="#">🤝 Sell With Us</a></li>
+        <li><a href="#">📜 Privacy Policy</a></li>
+        <li><a href="#">📋 Terms of Service</a></li>
+        <li><a href="#">🏭 Our Weavers</a></li>
+        <li><a href="#">📰 Blog</a></li>
+        <li><a href="#">💼 Careers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Tantakala Traditional Clothing. All rights reserved. | Sarankul, Nayagarh, Odisha 752080</p>
+    <div class="social-row">
+      <a class="soc-btn" href="#" title="Facebook">📘</a>
+      <a class="soc-btn" href="#" title="Instagram">📸</a>
+      <a class="soc-btn" href="#" title="WhatsApp">💬</a>
+      <a class="soc-btn" href="#" title="YouTube">▶️</a>
+    </div>
+    <div class="payment-badges">
+      <span class="pay-badge">UPI</span>
+      <span class="pay-badge">Cash</span>
+      <span class="pay-badge">Card</span>
+      <span class="pay-badge">PhonePe</span>
+      <span class="pay-badge">GPay</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toastEl">🛒 <span id="toastMsg"></span></div>
+
+<script>
+/* ── PRODUCT DATA ── */
+const products = [
+  {id:1,cat:'shirt',name:'Tantakala Handloom Sambalpuri Shirt',brand:'Traditional',price:549,orig:999,off:45,rating:4.8,reviews:312,emoji:'👔',badge:'hot',sizes:['S','M','L','XL','XXL']},
+  {id:2,cat:'pant',name:'Classic Odisha Formal Trouser',brand:'Heritage',price:649,orig:1099,off:41,rating:4.7,reviews:198,emoji:'👖',badge:'new',sizes:['28','30','32','34','36']},
+  {id:3,cat:'modern',name:'Slim-Fit Cargo Pant — Khaki',brand:'Modern',price:799,orig:1399,off:43,rating:4.6,reviews:145,emoji:'👖',badge:'trend',sizes:['28','30','32','34']},
+  {id:4,cat:'ethnic',name:'Odia Festive Kurta — Deep Red',brand:'Ethnic',price:699,orig:1199,off:42,rating:4.9,reviews:423,emoji:'🧥',badge:'hot',sizes:['S','M','L','XL']},
+  {id:5,cat:'shirt',name:'Ikat Print Casual Shirt — Blue',brand:'Traditional',price:449,orig:799,off:44,rating:4.5,reviews:89,emoji:'👕',badge:'sale',sizes:['S','M','L','XL','XXL']},
+  {id:6,cat:'formal',name:'Office-Wear Premium Cotton Shirt',brand:'Formal',price:599,orig:999,off:40,rating:4.7,reviews:234,emoji:'👔',badge:'new',sizes:['S','M','L','XL']},
+  {id:7,cat:'pant',name:'Straight-Cut Formal Trouser — Navy',brand:'Heritage',price:749,orig:1249,off:40,rating:4.6,reviews:167,emoji:'👖',badge:'',sizes:['28','30','32','34','36']},
+  {id:8,cat:'ethnic',name:'Dhoti Kurta — Festive White',brand:'Ethnic',price:899,orig:1599,off:44,rating:4.8,reviews:276,emoji:'🧥',badge:'hot',sizes:['S','M','L','XL']},
+  {id:9,cat:'modern',name:'Stretch Slim-Fit Jeans — Black',brand:'Modern',price:849,orig:1499,off:43,rating:4.5,reviews:112,emoji:'👖',badge:'trend',sizes:['28','30','32','34']},
+  {id:10,cat:'casual',name:'Half-Sleeve Linen Shirt — White',brand:'Traditional',price:349,orig:599,off:42,rating:4.4,reviews:78,emoji:'👕',badge:'sale',sizes:['S','M','L','XL','XXL']},
+  {id:11,cat:'shirt',name:'Block Print Full-Sleeve Shirt',brand:'Traditional',price:499,orig:899,off:44,rating:4.7,reviews:192,emoji:'👔',badge:'new',sizes:['S','M','L','XL']},
+  {id:12,cat:'ethnic',name:'Sambalpuri Silk Kurta — Maroon',brand:'Ethnic',price:1199,orig:1999,off:40,rating:4.9,reviews:341,emoji:'🧥',badge:'ltd',sizes:['S','M','L','XL']},
+];
+
+let currentFilter = 'all';
+let cartCount = 2;
+
+/* ── RENDER PRODUCTS ── */
+function renderProducts(filter){
+  const grid = document.getElementById('prodGrid');
+  const filtered = filter==='all' ? products : products.filter(p=>p.cat===filter||p.badge===filter);
+  grid.innerHTML = filtered.map(p=>`
+    <div class="prod-card" onclick="addToCart('${p.name}')">
+      <div class="prod-img-wrap">
+        <div style="position:relative;z-index:1;font-size:80px">${p.emoji}</div>
+        <div class="prod-badges">
+          ${p.badge==='hot'?'<span class="pbadge pbadge-hot">🔥 Hot</span>':''}
+          ${p.badge==='new'?'<span class="pbadge pbadge-new">New</span>':''}
+          ${p.badge==='sale'?'<span class="pbadge pbadge-sale">Sale</span>':''}
+          ${p.badge==='trend'?'<span class="pbadge pbadge-trend">Trending</span>':''}
+          ${p.badge==='ltd'?'<span class="pbadge pbadge-ltd">Ltd. Ed.</span>':''}
+        </div>
+        <button class="wish-btn" onclick="event.stopPropagation();toggleWish(this)">♡</button>
+        <button class="quick-view" onclick="event.stopPropagation();toast('👀 Quick view: ${p.name}')">Quick View</button>
+      </div>
+      <div class="prod-info">
+        <div class="prod-brand">Tantakala ${p.brand}</div>
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-rating">
+          <span class="rating-pill">★ ${p.rating}</span>
+          <span class="rating-count">(${p.reviews} reviews)</span>
+        </div>
+        <div class="sizes">
+          ${p.sizes.map(s=>`<span class="size-chip" onclick="event.stopPropagation();selSize(this)">${s}</span>`).join('')}
+        </div>
+        <div class="prod-price">
+          <span class="price-curr">₹${p.price}</span>
+          <span class="price-orig">₹${p.orig}</span>
+          <span class="price-off">${p.off}% off</span>
+        </div>
+        <button class="add-btn" onclick="event.stopPropagation();addToCart('${p.name}')">🛒 Add to Cart</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+renderProducts('all');
+
+/* ── FILTER ── */
+function applyFilter(el,val){
+  document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  currentFilter = val;
+  renderProducts(val);
+}
+
+function filterCat(el,val){
+  document.querySelectorAll('.cat-card').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderProducts(val);
+  document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
+
+function nav(el,val){
+  document.querySelectorAll('.nav-link').forEach(n=>n.classList.remove('active'));
+  el.classList.add('active');
+  if(val!=='all'){
+    renderProducts(val);
+    document.getElementById('products').scrollIntoView({behavior:'smooth'});
+  }
+}
+
+/* ── CART ── */
+function addToCart(name){
+  cartCount++;
+  document.getElementById('cartCount').textContent = cartCount;
+  toast('🛒 Added to Cart: '+name.slice(0,30)+'…');
+}
+
+/* ── WISHLIST ── */
+function toggleWish(btn){
+  btn.classList.toggle('active');
+  btn.textContent = btn.classList.contains('active') ? '♥' : '♡';
+  toast(btn.classList.contains('active') ? '❤️ Added to Wishlist!' : '💔 Removed from Wishlist');
+}
+
+/* ── SIZE ── */
+function selSize(el){
+  const parent = el.closest('.sizes');
+  parent.querySelectorAll('.size-chip').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+}
+
+/* ── HERO SLIDER ── */
+let slideIndex = 0;
+const totalSlides = 3;
+
+function updateSlider(){
+  document.getElementById('heroSlides').style.transform = `translateX(-${slideIndex*100}%)`;
+  document.querySelectorAll('.hero-dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===slideIndex);
+  });
+}
+function moveSlide(dir){
+  slideIndex = (slideIndex+dir+totalSlides)%totalSlides;
+  updateSlider();
+}
+function goSlide(i){slideIndex=i;updateSlider();}
+setInterval(()=>moveSlide(1),5000);
+
+/* ── SEARCH ── */
+function handleSearch(){
+  const q = document.getElementById('searchInput').value.trim();
+  if(!q){toast('⚠️ Please type something to search');return;}
+  toast('🔍 Searching for: "'+q+'"');
+  // simple keyword filter
+  const kw = q.toLowerCase();
+  const res = products.filter(p=>p.name.toLowerCase().includes(kw)||p.cat.includes(kw)||p.brand.toLowerCase().includes(kw));
+  const grid = document.getElementById('prodGrid');
+  if(res.length){
+    grid.innerHTML = '';
+    document.getElementById('products').scrollIntoView({behavior:'smooth'});
+    setTimeout(()=>renderFiltered(res),300);
+  } else {
+    toast('😔 No products found for "'+q+'"');
+  }
+}
+function renderFiltered(arr){
+  const grid = document.getElementById('prodGrid');
+  grid.innerHTML = arr.map(p=>`
+    <div class="prod-card" onclick="addToCart('${p.name}')">
+      <div class="prod-img-wrap">
+        <div style="position:relative;z-index:1;font-size:80px">${p.emoji}</div>
+        <button class="wish-btn" onclick="event.stopPropagation();toggleWish(this)">♡</button>
+      </div>
+      <div class="prod-info">
+        <div class="prod-brand">Tantakala ${p.brand}</div>
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-rating">
+          <span class="rating-pill">★ ${p.rating}</span>
+          <span class="rating-count">(${p.reviews})</span>
+        </div>
+        <div class="prod-price">
+          <span class="price-curr">₹${p.price}</span>
+          <span class="price-orig">₹${p.orig}</span>
+          <span class="price-off">${p.off}% off</span>
+        </div>
+        <button class="add-btn" onclick="event.stopPropagation();addToCart('${p.name}')">🛒 Add to Cart</button>
+      </div>
+    </div>
+  `).join('');
+}
+document.getElementById('searchInput').addEventListener('keypress',e=>{if(e.key==='Enter')handleSearch();});
+
+/* ── NEWSLETTER ── */
+function subscribeNL(){
+  const em = document.getElementById('nlEmail').value.trim();
+  if(!em||!em.includes('@')){toast('⚠️ Please enter a valid email');return;}
+  toast('🎉 Subscribed! Welcome to Tantakala family, '+em);
+  document.getElementById('nlEmail').value='';
+}
+
+/* ── TOAST ── */
+function toast(msg){
+  const el = document.getElementById('toastEl');
+  document.getElementById('toastMsg').textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._t);
+  el._t = setTimeout(()=>el.classList.remove('show'),3000);
+}
+// global alias
+window.toast = toast;
+
+/* ── SCROLL ANIMATION ── */
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.style.animation='fadeUp .55s ease both';
+  });
+},{threshold:.1});
+document.querySelectorAll('.prod-card,.testi-card,.feature-card,.combo-card,.offer-card').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
